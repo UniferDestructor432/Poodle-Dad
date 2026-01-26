@@ -1,4 +1,4 @@
-import { IonButton, IonCard, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonImg, IonItemSliding, IonLabel, IonPage, IonRow, IonSearchbar, IonSegment, IonText, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButton, IonCard, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonImg, IonItemSliding, IonLabel, IonPage, IonRow, IonSearchbar, IonSegment, IonText, IonTitle, IonToolbar } from '@ionic/react';
 import { useState } from 'react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Main.css';
@@ -98,6 +98,12 @@ const Main: React.FC = () => {
                     </IonRow>
                 </IonGrid>
             </IonContent>
+
+            <IonFooter>
+                <IonToolbar style={{display: 'flex', flexDirection: 'row', textAlign: 'center'}}>
+                    <IonText color="medium" style={{fontSize: '15px'}}>© 2026 Mascotas App</IonText>
+                </IonToolbar>
+            </IonFooter>
         </IonPage>
     );
 }
